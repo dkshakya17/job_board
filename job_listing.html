@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Rozgar Home</title>
+  <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+  <!--=============================== js ==================================== -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/semantic.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+  <!-- Sidebar Menu -->
+  <div class="ui vertical sidebar menu">
+    <div class="item text_center">
+      <button class="ui pink basic button"> <i class="fa fa-briefcase"></i>
+        <span id="menu_item_mobile_emp_zone"></span>
+      </button>
+    </div>
+    <a class="active item" id="menu_item_mobile_home"></a>
+    <div class="ui accordion item">
+      <div class="title">
+        <span id="menu_item_mobile_search_job"></span>
+        <i class="dropdown icon pull_right"></i>
+      </div>
+
+      <div class="content">
+        <div>
+          <ul class="ui sub_menu list">
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_location"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_skill"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_designation"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_company"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_cat"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_all"> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a class="item" id="menu_item_mobile_international_jobs"></a>
+    <a class="item" id="menu_item_mobile_govt_jobs"></a>
+    <a href="#" class="item" id="menu_item_mobile_skill_assessment"></a>
+    <div class="item">
+      <div class="ui one column grid">
+        <div class="column text_center">
+          <a class="ui violet basic button">
+            <i class="fa fa-sign-in-alt"></i>
+            <span id="menu_item_mobile_login"></span>
+          </a>
+        </div>
+        <button class="ui pink button column mg0">
+          <i class="fa fa-plus-circle"></i>
+          <span id="menu_item_mobile_post_jobs"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="pusher">
+    <!--=============================== Begin Header Menu ==================================== -->
+    <header class="main_header">
+      <div class="ui container top_header">
+        <div class="ui secondary  menu">
+          <a class="menu_icon item">
+            <i class="fas fa-bars"></i>
+          </a>
+          <div class="item">
+            <a class="ui logo image" href="#">
+              <img src="image/logo.png">
+            </a>
+          </div>
+          <div class="right menu">
+            <div class="item">
+              <button class="ui pink basic button"> <i class="fa fa-briefcase"></i>
+                <span id="menu_item_desktop_emp_zone"></span></button>
+            </div>
+            <div class="item">
+              <button class="ui pink button"> <i class="fa fa-plus-circle"></i>
+                <span id="menu_item_desktop_post_jobs"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main_navigation">
+        <div class="ui stackable pointing menu container">
+          <a class="active item" id="menu_item_desktop_home"></a>
+          <div class="searchjob_drop ui pointing dropdown item">
+            <span class="text" id="menu_item_desktop_search_job"></span>
+            <i class="dropdown icon"></i>
+            <ul class="menu">
+              <li class="item">
+                <a href="#" id="menu_item_desktop_search_jobs_by_location"> </a>
+              </li>
+              <li class="item">
+                <a href="#" id="menu_item_desktop_search_jobs_by_skill"> </a>
+              </li>
+              <li class="item">
+                <a href="#" id="menu_item_desktop_search_jobs_by_designation"> </a>
+              </li>
+              <li class="item">
+                <a href="#" id="menu_item_desktop_search_jobs_by_company"> </a>
+              </li>
+              <li class="item">
+                <a href="#" id="menu_item_desktop_search_jobs_by_cat"> </a>
+              </li>
+              <li class="item">
+                <a href="#" id="menu_item_desktop_search_jobs_by_all"> </a>
+              </li>
+            </ul>
+          </div>
+          <a class="item" id="menu_item_desktop_international_jobs"></a>
+          <a class="item" id="menu_item_desktop_govt_jobs"></a>
+          <a href="#" class="item" id="menu_item_desktop_skill_assessment"></a>
+          <div class="right menu">
+            <a class="item">
+              <i class="fa fa-sign-in-alt"></i>
+              <span id="menu_item_desktop_login"></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="comman_header">
+      <div class="ui container">
+        <div class = "ui centered stackable grid">
+            <div class="ten wide column">
+              <div class="ui action left icon input">
+              <i class="search icon"></i>
+              <input type="text" placeholder="Company, Skill, Job Title or Keyword...">
+              <div class="ui search selection dropdown">
+                <i class="dropdown icon"></i>
+                <div class="default text">Select Location</div>
+                <div class="menu">
+                  <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
+                  <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
+                </div>
+              </div>
+              <div class="ui search selection dropdown">
+                <i class="dropdown icon"></i>
+                <div class="default text">Experience</div>
+                <div class="menu">
+                  <div class="item" data-value="af"><i class="af flag"></i>0-2 Years</div>
+                  <div class="item" data-value="ax"><i class="ax flag"></i>2-5 Years</div>
+                  <div class="item" data-value="ax"><i class="ax flag"></i>5-8 Years</div>
+                </div>
+              </div>
+              <button class="ui pink button"> <i class="fa fa-search"></i>Search</button>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--=============================== End Header Menu ==================================== -->
+    
+    <section class="main_section grey_bg">
+      <!--=============================== Begin Breadcrumb Section ==================================== -->
+      
+        <div class="ui container breadcrumb_container">
+          <div class="ui breadcrumb">
+              <a class="section">Home</a>
+              <i class="right angle icon divider"></i>
+              <a class="section">Noida Jobs</a>
+              <i class="right angle icon divider"></i>
+              <div class="section">Full stack developer required</div>
+          </div>
+        </div>
+      
+      <!--=============================== End Breadcrumb Section ==================================== -->
+
+      <!--=============================== Begin Main Section ==================================== -->
+      <div class="ui container">
+
+        <article class="ui stackable two column grid" id="job_filter">
+          <aside class="ui four wide column ui rail">
+
+            <div class="filters ui sticky">
+
+              <div class="ui vertical menu">
+                <div class="item">
+                  <h4 class=" ui header"> Refine Search Results</h4>
+                </div>
+
+                <div class="item">
+                  <h4 class="ui header">Freshness</h4>
+                  <div class="ui selection dropdown">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Last 30 Days</div>
+                    <div class="menu">
+                      <div class="item" data-value="0">Last 15 Days</div>
+                      <div class="item" data-value="0">Last 7 Days</div>
+                      <div class="item" data-value="0">Last 3 Days</div>
+                      <div class="item" data-value="0">Last 1 Days</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <h4 class="ui header">Industry</h4>
+                  <ul class="ui list">
+                    <li class="item">
+                      <a href="#" class="grey_color"><i class="fa fa-angle-right"></i>IT
+                        Software/Software Services</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" class="grey_color"><i class="fa fa-angle-right"></i>Engineering</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" class="grey_color"><i class="fa fa-angle-right"></i>Telecom
+                        Software</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" class="grey_color"><i class="fa fa-angle-right"></i>Network
+                        Administrator</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" class="grey_color"><i class="fa fa-angle-right"></i>Graphic
+                        Designer</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" class="grey_color"><i class="fa fa-angle-right"></i>Content
+                        Writing</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" class="grey_color"><i class="fa fa-angle-right"></i>E-Commerce</a>
+                    </li>
+                  </ul>
+                  <a class="more_link right floated">+90 more</a>
+                </div>
+
+
+              </div>
+
+              <div class="ui vertical accordion menu">
+                <div class="item">
+                  <a class="title">
+                    <i class="dropdown icon"></i>
+                    <h4>Skills</h4>
+                  </a>
+                  <div class="content">
+
+                    <div class="ui fluid multiple search selection dropdown">
+                      <input type="hidden" name="country">
+                      <i class="dropdown icon"></i>
+                      <div class="default text">Search Skills</div>
+                      <div class="menu">
+                        <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
+                        <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
+                        <div class="item" data-value="al"><i class="al flag"></i>Albania</div>
+                        <div class="item" data-value="dz"><i class="dz flag"></i>Algeria</div>
+                        <div class="item" data-value="as"><i class="as flag"></i>American Samoa</div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="item">
+                  <a class="title">
+                    <i class="dropdown icon"></i>
+                    <h4>Top Companies</h4>
+                  </a>
+                  <div class="content">
+                    <div class="ui form">
+                      <div class="grouped fields">
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="small">
+                            <label>Accenture</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="medium">
+                            <label>HCL</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="large">
+                            <label>Wipro</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" tabindex="0">
+                            <label>Infosys</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <a class="active title">
+                    <i class="dropdown icon"></i>
+                    <h4>Location</h4>
+                  </a>
+                  <div class="active content">
+                    <div class="ui form">
+                      <div class="grouped fields">
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="size" value="small">
+                            <label>Noida</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="size" value="medium">
+                            <label>Delhi</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="size" value="large">
+                            <label>Bengluru</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="size" value="x-large">
+                            <label>Lucknow</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <a class="title">
+                    <i class="dropdown icon"></i>
+                    <h4>Salary</h4>
+                  </a>
+                  <div class="content">
+                    <div class="ui form">
+                      <div class="grouped fields">
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="size" value="small">
+                            <label>0-3lakhs</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="size" value="medium">
+                            <label>4-7lakhs</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="size" value="large">
+                            <label>8-10lakhs</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="size" value="x-large">
+                            <label>11-20lakhs</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <a class="title">
+                    <i class="dropdown icon"></i>
+                    <h4>Employer Type</h4>
+                  </a>
+                  <div class="content">
+                    <div class="ui form">
+                      <div class="grouped fields">
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="size" value="small">
+                            <label>Consultant jobs</label>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input type="checkbox" name="size" value="medium">
+                            <label>Company Jobs</label>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </aside>
+
+          <main class="ui twelve wide column">
+            
+              
+
+                <div class="ui segment search_result_header_container">
+                  <div class="ui stackable two column grid">
+                    <div class="row">
+                      <div class="column">
+                          <p class="grey_color">1-25 of 2000 Jobs</p>
+                      </div>
+                      <div class="column">
+                          <div class="ui form sorting_form">
+                              <div class="pull_right inline fields">
+                                <label>Sort By</label>
+                                <div class="field">
+                                  <div class="ui radio checkbox">
+                                    <input type="radio" name="frequency" checked="checked">
+                                    <label>Relevance</label>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <div class="ui radio checkbox">
+                                    <input type="radio" name="frequency">
+                                    <label>Date</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <ul class="ui relaxed divided items pd0">
+                     <li class="item">
+                      <a href="job_detail.html" class="content job_tile job_tile_common">
+                      <h3 class="ui violet header">Looking for Bootstrap designer</h3>
+                      <p class="compnay_name grey_color">Mount talent consulting Pvt Ltd.</p>
+                      <div class="meta">
+                        <div class="location grey_color">
+                         <span class="loc">
+                          <i class="fa fa-map-marker"></i> Bengluru</span> 
+                         <span class="loc">
+                          <i class="fa fa-briefcase"></i>  2-5 Years</span>
+                          <span class="loc">
+                            <i class="fa fa-rupee-sign"></i> Not Disclosed
+                          </span>
+                        </div>
+
+                      </div>
+                      <div class="description">
+                       <p class="key-skills grey_color">
+                        <strong >Key Skills: </strong>
+                        <span> wordpress, </span> <span> css3, </span> <span> javascript,</span> <span> php, </span> <span> laravel, </span> <span> woocommerce </span>
+                         </p>
+                       <p class="profile-description grey_color"><strong>Job Description: </strong>
+                           Accenture Technology powers our clients businesses with innovative technologies established and emerging Accenture Technology powers our clients businesses with innovative technologies established and emerging
+                       </p>
+                    </div>
+                      <div class="extra">
+                                <p class="pull_right">
+                                  <span>Posted By - </span>
+                                  <span>Pushpendra Singh</span>
+                                  <span>3 Days Ago</span>
+                              </p>
+                        </div>
+                    </a>
+                   
+                  </li>
+                  <li class="item">
+                      <a href="job_detail.html" class="content job_tile job_tile_common">
+                      <h3 class="ui violet header">Looking for Bootstrap designer</h3>
+                      <p class="compnay_name grey_color">Mount talent consulting Pvt Ltd.</p>
+                      <div class="meta">
+                        <div class="location grey_color">
+                         <span class="loc">
+                          <i class="fa fa-map-marker"></i> Bengluru</span> 
+                         <span class="loc">
+                          <i class="fa fa-briefcase"></i>  2-5 Years</span>
+                          <span class="loc">
+                            <i class="fa fa-rupee-sign"></i> Not Disclosed
+                          </span>
+                        </div>
+
+                      </div>
+                      <div class="description">
+                       <p class="key-skills grey_color">
+                        <strong >Key Skills: </strong>
+                        <span> wordpress, </span> <span> css3, </span> <span> javascript,</span> <span> php, </span> <span> laravel, </span> <span> woocommerce </span>
+                         </p>
+                       <p class="profile-description grey_color"><strong>Job Description: </strong>
+                           Accenture Technology powers our clients businesses with innovative technologies established and emerging Accenture Technology powers our clients businesses with innovative technologies established and emerging
+                       </p>
+                    </div>
+                      <div class="extra">
+                                <p class="pull_right">
+                                  <span>Posted By - </span>
+                                  <span>Pushpendra Singh</span>
+                                  <span>3 Days Ago</span>
+                              </p>
+                        </div>
+                    </a>
+                   
+                  </li>
+                  <li class="item">
+                      <a href="job_detail.html" class="content job_tile job_tile_common">
+                      <h3 class="ui violet header">Looking for Bootstrap designer</h3>
+                      <p class="compnay_name grey_color">Mount talent consulting Pvt Ltd.</p>
+                      <div class="meta">
+                        <div class="location grey_color">
+                         <span class="loc">
+                          <i class="fa fa-map-marker"></i> Bengluru</span> 
+                         <span class="loc">
+                          <i class="fa fa-briefcase"></i>  2-5 Years</span>
+                          <span class="loc">
+                            <i class="fa fa-rupee-sign"></i> Not Disclosed
+                          </span>
+                        </div>
+
+                      </div>
+                      <div class="description">
+                       <p class="key-skills grey_color">
+                        <strong >Key Skills: </strong>
+                        <span> wordpress, </span> <span> css3, </span> <span> javascript,</span> <span> php, </span> <span> laravel, </span> <span> woocommerce </span>
+                         </p>
+                       <p class="profile-description grey_color"><strong>Job Description: </strong>
+                           Accenture Technology powers our clients businesses with innovative technologies established and emerging Accenture Technology powers our clients businesses with innovative technologies established and emerging
+                       </p>
+                    </div>
+                      <div class="extra">
+                                <p class="pull_right">
+                                  <span>Posted By - </span>
+                                  <span>Pushpendra Singh</span>
+                                  <span>3 Days Ago</span>
+                              </p>
+                        </div>
+                    </a>
+                   
+                  </li>
+                  <li class="item">
+                      <a href="job_detail.html" class="content job_tile job_tile_common">
+                      <h3 class="ui violet header">Looking for Bootstrap designer</h3>
+                      <p class="compnay_name grey_color">Mount talent consulting Pvt Ltd.</p>
+                      <div class="meta">
+                        <div class="location grey_color">
+                         <span class="loc">
+                          <i class="fa fa-map-marker"></i> Bengluru</span> 
+                         <span class="loc">
+                          <i class="fa fa-briefcase"></i>  2-5 Years</span>
+                          <span class="loc">
+                            <i class="fa fa-rupee-sign"></i> Not Disclosed
+                          </span>
+                        </div>
+
+                      </div>
+                      <div class="description">
+                       <p class="key-skills grey_color">
+                        <strong >Key Skills: </strong>
+                        <span> wordpress, </span> <span> css3, </span> <span> javascript,</span> <span> php, </span> <span> laravel, </span> <span> woocommerce </span>
+                         </p>
+                       <p class="profile-description grey_color"><strong>Job Description: </strong>
+                           Accenture Technology powers our clients businesses with innovative technologies established and emerging Accenture Technology powers our clients businesses with innovative technologies established and emerging
+                       </p>
+                    </div>
+                      <div class="extra">
+                                <p class="pull_right">
+                                  <span>Posted By - </span>
+                                  <span>Pushpendra Singh</span>
+                                  <span>3 Days Ago</span>
+                              </p>
+                        </div>
+                    </a>
+                   
+                  </li>
+                  </ul>
+                </div>
+                <section class="ui container">
+                  <div class="ui centered one column stackable grid">
+                    <div class="column listing_pagination">
+                    <div class="ui centered column grid">
+                      <div class="ui pagination menu">
+                        <a class="item">
+                          1
+                        </a>
+                        <div class="disabled item">
+                          ...
+                        </div>
+                        <a class="item active">
+                          10
+                        </a>
+                        <a class="item">
+                          11
+                        </a>
+                        <a class="item">
+                          12
+                        </a>
+                      </div>
+                   
+                  </div>
+                    </div>
+                  </div>
+                </section>   
+                </main>
+        </article>
+
+      </div>
+      <!--=============================== End Main Section ==================================== -->
+    </section>
+
+  </div>
+  <script type="text/javascript" src="js/render.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+"KEY_MENU_ITEM_HOME" : "Home",
+"KEY_MENU_ITEM_SEARCH_JOB" : "Search Jobs",
+"KEY_MENU_ITEM_SEARCH_JOBS_BY_LOCATION" : "Jobs by Location",
+"KEY_MENU_ITEM_SEARCH_JOBS_BY_SKILL" : "Jobs by Skill",
+"KEY_MENU_ITEM_SEARCH_JOBS_BY_DSIGNATION" : "Jobs by Designation",
+"KEY_MENU_ITEM_SEARCH_JOBS_BY_COMPANY" : "Jobs by Company",
+"KEY_MENU_ITEM_SEARCH_JOBS_BY_CAT" : "Jobs by Category",
+"KEY_MENU_ITEM_SEARCH_JOBS_BY_ALL" : "Browse All Jobs",
+"KEY_MENU_ITEM_INTERNATIONAL_JOBS" : "International Jobs",
+"KEY_MENU_ITEM_GOVT_JOBS" : "Government Jobs",
+"KEY_MENU_ITEM_EMP_ZONE" : "Employer Zone",
+"KEY_MENU_ITEM_LOGIN" : "Login",
+"KEY_MENU_ITEM_POST_JOBS" : "Post Jobs",
+"KEY_MENU_ITEM_SKILL_ASSESSMENT" : "Skill Assessment"
+
+
+}

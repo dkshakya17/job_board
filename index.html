@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+	<title>Rozgar Home</title>
+ 
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+<!--=============================== js ==================================== -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/semantic.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+<!-- Sidebar Menu -->
+<div class="ui vertical sidebar menu">
+    <div class="item text_center">
+      <button class="ui pink basic button"> <i class="fa fa-briefcase"></i>
+      <span id="menu_item_mobile_emp_zone"></span>
+      </button>
+    </div>
+    
+    
+  <a class="active item" id="menu_item_mobile_home">
+  </a>
+  <div class="ui accordion item">
+
+
+
+          <div class="title"><span id="menu_item_mobile_search_job"></span> 
+          <i class="dropdown icon pull_right"></i> </div>
+          
+          <div class="content">
+            <div>
+            <ul class="ui sub_menu list">
+
+            <li class="item">
+            
+              <a href="#" id="menu_item_mobile_search_jobs_by_location"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_skill"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_designation"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_company"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_cat"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_all"> </a>
+            </li>
+          </ul>
+            </div>
+          </div>
+  </div>
+ <a class="item" id="menu_item_mobile_international_jobs">
+  </a>
+  <a class="item" id="menu_item_mobile_govt_jobs">
+   
+  </a>
+  <a href="#" class="item" id="menu_item_mobile_skill_assessment"></a>
+  
+   <div class="item">
+    <div class="ui one column grid">
+      <div class="column text_center">
+        <a class="ui pink basic button">
+       <i class="fa fa-sign-in-alt"></i>
+         <span id="menu_item_mobile_login"></span>
+      </a>
+      </div>
+
+      <button class="ui pink button column mg0"><i class="fa fa-plus-circle"></i> 
+        <span id="menu_item_mobile_post_jobs"></span></button>
+      
+      
+       
+      </div>
+  </div>
+
+ </div>
+
+<div class="pusher">
+<!--=============================== header Menu==================================== -->
+<header class="main_header">
+  <div class="ui container top_header">
+    <div class="ui secondary  menu">
+    <a class="menu_icon item">
+          <i class="fas fa-bars"></i>
+        </a>
+    <div class="item">
+       <a class="ui logo image" href="#">
+          <img src="image/logo.png">
+      </a>
+    </div>
+ 
+  <div class="right menu">
+     <div class="item">
+      <button class="ui pink basic button"> <i class="fa fa-briefcase"></i> 
+        <span id="menu_item_desktop_emp_zone"></span></button>
+    </div>
+    
+    <div class="item">
+      <button class="ui pink button"> <i class="fa fa-plus-circle"></i>
+       <span id="menu_item_desktop_post_jobs"></span>
+    </button>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <nav class="main_navigation">
+  <div class="ui stackable pointing menu container">
+  <a class="active item" id="menu_item_desktop_home">
+  </a>
+  <div class="searchjob_drop ui pointing dropdown item">
+          <span class="text" id="menu_item_desktop_search_job"></span>
+          <i class="dropdown icon"></i>
+          <ul class="menu">
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_location"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_skill"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_designation"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_company"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_cat"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_all"> </a>
+            </li>
+          </ul>
+  </div>
+  <a class="item" id="menu_item_desktop_international_jobs">
+  </a>
+  <a class="item" id="menu_item_desktop_govt_jobs">
+  </a>
+  <a href="#" class="item" id="menu_item_desktop_skill_assessment"></a>
+  <div class="right menu">
+    <div class="ui dropdown item">
+      <i class="fa fa-globe"></i>
+      Language 
+      <div class="menu">
+        <a class="item">English</a>
+        <a class="item">Hindi</a>
+        <a class="item">Spanish</a>
+      </div>
+    </div>
+   <a class="item">
+   <i class="fa fa-sign-in-alt"></i>
+    <span id="menu_item_desktop_login"></span>
+   </a>
+  </div>
+  </div>
+  </nav>
+</header>
+
+
+
+
+
+<!--=============================== main section ==================================== -->
+
+<section class="banner">
+  <div class="ui container">
+  <div class="ui centered grid">
+  <div class="one column row">
+    <div class="banner_text column">
+      <h1 class="whitefont text_center">The Easiest Way to Get Your New Job</h1>
+      <p class="whitefont text_center">Find Jobs, Employment & Career Opportunities</p>
+    </div>
+   
+  </div>
+  <div class="serach_box one column row">
+    <div class="column">
+      <form class="serach_form ui form">
+        <div class="ui centered three column doubling stackable grid">
+          <div class="eight wide column">
+            <div class="ui search">
+            <div class="ui icon input">
+              <input class="prompt" type="text" autofocus="autofocus" placeholder="Job title, keywords or company name">
+             <i class="large keyboard icon"></i>
+            </div>
+            
+            <div class="results"></div>
+            </div>
+          </div>
+          <div class="five wide column">
+            <div class="ui search">
+            <div class="ui icon input focus">
+              <input class="prompt" type="text"  placeholder="Location">
+              <i class="large map marker icon "></i>
+            </div>
+         <div class="results"></div>
+         </div>
+          </div>
+          <div class="three wide column">
+            <a class="serch_btn ui pink button" href="job_listing.html"> Search</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+</section> 
+<section class="categories section">
+  <div class="ui container">
+    <h2 class="main_heading text_center">Browse Jobs By Sector, Skill, Company, Loaction & Role</h2>
+
+    <div class="ui one column stackable grid">
+  
+  <div class="column">
+     <div class="ui menu_tab stackable tabs menu" ">
+      <a class="active item" data-tab="first">All Sectors</a>
+      <a class="item" data-tab="second">Information Technology</a>
+      <a class="item" data-tab="third">Primary Locations</a>
+      <a class="item" data-tab="fourth">Top Companies</a>
+      <a class="item" data-tab="fifth">Demanding Roles</a>
+    </div>
+   <div class="ui tab tab_content segment active" data-tab="first">
+      <div class="tab_list ui grid">
+        <div class="column">
+          <ul class="ui list">
+            <li class="item"><a href="#">PHP<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Android<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Node JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">React JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Angular JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Adobe Photoshop<span>(20)</span> </a></li>
+            <li class="item"><a href="#">SQL Server<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Mainframes<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Java/J2EE<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Data Science<span>(20)</span> </a></li>
+          </ul>
+           <ul class="ui list">
+            <li class="item"><a href="#">PHP<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Android<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Node JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">React JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Angular JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Adobe Photoshop<span>(20)</span> </a></li>
+            <li class="item"><a href="#">SQL Server<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Mainframes<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Java/J2EE<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Data Science<span>(20)</span> </a></li>
+          </ul>
+            <ul class="ui list">
+            <li class="item"><a href="#">PHP<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Android<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Node JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">React JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Angular JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Adobe Photoshop<span>(20)</span> </a></li>
+            <li class="item"><a href="#">SQL Server<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Mainframes<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Java/J2EE<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Data Science<span>(20)</span> </a></li>
+          </ul>
+           <ul class="ui list">
+            <li class="item"><a href="#">PHP<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Android<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Node JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">React JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Angular JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Adobe Photoshop<span>(20)</span> </a></li>
+            <li class="item"><a href="#">SQL Server<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Mainframes<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Java/J2EE<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Data Science<span>(20)</span> </a></li>
+          </ul>
+           <ul class="ui list">
+            <li class="item"><a href="#">PHP<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Android<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Node JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">React JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Angular JS<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Adobe Photoshop<span>(20)</span> </a></li>
+            <li class="item"><a href="#">SQL Server<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Mainframes<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Java/J2EE<span>(20)</span> </a></li>
+            <li class="item"><a href="#">Data Science<span>(20)</span> </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <div class="ui tab segment" data-tab="second">
+    <div class="tab_list ui grid">
+      <div class="column">
+        <ul class="ui list">
+          <li class="item"><a href="#">Display Advertising<span>(14)</span></a></li>
+          <li class="item"><a href="#">Email Marketing<span>(14)</span></a></li>
+          <li class="item"><a href="#">Lead Generation<span>(14)</span></a></li>
+          <li class="item"><a href="#">Market & Customer Research<span>(14)</span></a></li>
+          <li class="item"><a href="#">Display Advertising<span>(14)</span></a></li>
+          <li class="item"><a href="#">Email Marketing<span>(14)</span></a></li>
+          <li class="item"><a href="#">Lead Generation<span>(14)</span></a></li>
+          <li class="item"><a href="#">Market & Customer Research<span>(14)</span></a></li>
+          <li class="item"><a href="#">Display Advertising<span>(14)</span></a></li>
+          <li class="item"><a href="#">Email Marketing<span>(14)</span></a></li>
+        </ul>
+        <ul class="ui list">
+          <li class="item"><a href="#">Display Advertising<span>(14)</span></a></li>
+          <li class="item"><a href="#">Email Marketing<span>(14)</span></a></li>
+          <li class="item"><a href="#">Lead Generation<span>(14)</span></a></li>
+          <li class="item"><a href="#">Market & Customer Research<span>(14)</span></a></li>
+          <li class="item"><a href="#">Display Advertising<span>(14)</span></a></li>
+          <li class="item"><a href="#">Email Marketing<span>(14)</span></a></li>
+          <li class="item"><a href="#">Lead Generation</a></li>
+          <li class="item"><a href="#">Market & Customer Research<span>(14)</span></a></li>
+          <li class="item"><a href="#">Display Advertising<span>(14)</span></a></li>
+          <li class="item"><a href="#">Email Marketing<span>(14)</span></a></li>
+         
+        </ul>
+        <ul class="ui list">
+          <li class="item"><a href="#">Display Advertising<span>(14)</span></a></li>
+          <li class="item"><a href="#">Email Marketing<span>(14)</span></a></li>
+          <li class="item"><a href="#">Lead Generation<span>(14)</span></a></li>
+          <li class="item"><a href="#">Market & Customer Research<span>(14)</span></a></li>
+          <li class="item"><a href="#">Display Advertising<span>(14)</span></a></li>
+          <li class="item"><a href="#">Email Marketing<span>(14)</span></a></li>
+          <li class="item"><a href="#">Lead Generation<span>(14)</span></a></li>
+          <li class="item"><a href="#">Market & Customer Research<span>(14)</span></a></li>
+          <li class="item"><a href="#">Display Advertising<span>(14)</span></a></li>
+          <li class="item"><a href="#">Email Marketing<span>(14)</span></a></li>
+        
+        </ul>
+        <ul class="ui list">
+          <li class="item"><a href="#">Display Advertising<span>(14)</span></a></li>
+          <li class="item"><a href="#">Email Marketing<span>(14)</span></a></li>
+          <li class="item"><a href="#">Lead Generation<span>(14)</span></a></li>
+          <li class="item"><a href="#">Market & Customer Research<span>(14)</span></a></li>
+          <li class="item"><a href="#">Display Advertising<span>(14)</span></a></li>
+          <li class="item"><a href="#">Email Marketing<span>(14)</span></a></li>
+          <li class="item"><a href="#">Lead Generation<span>(14)</span></a></li>
+          <li class="item"><a href="#">Market & Customer Research<span>(14)</span></a></li>
+          <li class="item"><a href="#">Display Advertising<span>(14)</span></a></li>
+          <li class="item"><a href="#">Email Marketing<span>(14)</span></a></li>
+        
+        </ul>
+
+      </div>
+    </div>
+   
+  </div>
+  <div class="ui tab segment" data-tab="third">
+    <div class="tab_list ui grid">
+      <div class="column">
+        <ul class="ui list">
+          <li class="item"><a href="#">Noida <span>(14)</span></a></li>
+          <li class="item"><a href="#">Delhi<span>(14)</span></a></li>
+          <li class="item"><a href="#">Bengluru<span>(14)</span></a></li>
+          <li class="item"><a href="#">Kolkata<span>(14)</span></a></li>
+          <li class="item"><a href="#">Mumbai<span>(14)</span> </a></li>
+          <li class="item"><a href="#">Pune<span>(14)</span></a></li>
+          <li class="item"><a href="#">Indore<span>(14)</span></a></li>
+          <li class="item"><a href="#">Chandigarh<span>(14)</span></a></li>
+          <li class="item"><a href="#">Noida<span>(14)</span> </a></li>
+          <li class="item"><a href="#">Delhi<span>(14)</span></a></li>
+       
+        </ul>
+         <ul class="ui list">
+          <li class="item"><a href="#">Noida <span>(14)</span></a></li>
+          <li class="item"><a href="#">Delhi<span>(14)</span></a></li>
+          <li class="item"><a href="#">Bengluru<span>(14)</span></a></li>
+          <li class="item"><a href="#">Kolkata<span>(14)</span></a></li>
+          <li class="item"><a href="#">Mumbai<span>(14)</span> </a></li>
+          <li class="item"><a href="#">Pune<span>(14)</span></a></li>
+          <li class="item"><a href="#">Indore<span>(14)</span></a></li>
+          <li class="item"><a href="#">Chandigarh<span>(14)</span></a></li>
+          <li class="item"><a href="#">Noida<span>(14)</span> </a></li>
+          <li class="item"><a href="#">Delhi<span>(14)</span></a></li>
+          
+        </ul>
+         <ul class="ui list">
+          <li class="item"><a href="#">Noida <span>(14)</span></a></li>
+          <li class="item"><a href="#">Delhi<span>(14)</span></a></li>
+          <li class="item"><a href="#">Bengluru<span>(14)</span></a></li>
+          <li class="item"><a href="#">Kolkata<span>(14)</span></a></li>
+          <li class="item"><a href="#">Mumbai <span>(14)</span></a></li>
+          <li class="item"><a href="#">Pune<span>(14)</span></a></li>
+          <li class="item"><a href="#">Indore<span>(14)</span></a></li>
+          <li class="item"><a href="#">Chandigarh<span>(14)</span></a></li>
+          <li class="item"><a href="#">Noida<span>(14)</span> </a></li>
+          <li class="item"><a href="#">Delhi<span>(14)</span></a></li>
+         
+        </ul>
+         <ul class="ui list">
+          <li class="item"><a href="#">Noida <span>(14)</span></a></li>
+          <li class="item"><a href="#">Delhi<span>(14)</span></a></li>
+          <li class="item"><a href="#">Bengluru<span>(14)</span></a></li>
+          <li class="item"><a href="#">Kolkata<span>(14)</span></a></li>
+          <li class="item"><a href="#">Mumbai <span>(14)</span></a></li>
+          <li class="item"><a href="#">Pune<span>(14)</span></a></li>
+          <li class="item"><a href="#">Indore<span>(14)</span></a></li>
+          <li class="item"><a href="#">Chandigarh<span>(14)</span></a></li>
+          <li class="item"><a href="#">Noida<span>(14)</span> </a></li>
+          <li class="item"><a href="#">Delhi<span>(14)</span></a></li>
+          
+        </ul>
+         <ul class="ui list">
+          <li class="item"><a href="#">Noida <span>(14)</span></a></li>
+          <li class="item"><a href="#">Delhi<span>(14)</span></a></li>
+          <li class="item"><a href="#">Bengluru<span>(14)</span></a></li>
+          <li class="item"><a href="#">Kolkata<span>(14)</span></a></li>
+          <li class="item"><a href="#">Mumbai<span>(14)</span> </a></li>
+          <li class="item"><a href="#">Pune<span>(14)</span></a></li>
+          <li class="item"><a href="#">Indore<span>(14)</span></a></li>
+          <li class="item"><a href="#">Chandigarh<span>(14)</span></a></li>
+          <li class="item"><a href="#">Noida<span>(14)</span> </a></li>
+          <li class="item"><a href="#">Delhi<span>(14)</span></a></li>
+          
+        </ul>
+        
+       
+      </div>
+    </div>
+
+  </div>
+  <div class="ui tab segment" data-tab="fourth">
+    <div class="tab_list ui grid">
+      <div class="column">
+        <ul class="ui list">
+          <li class="item"><a href="#">UI Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Frontend Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">PHP Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Wordpress Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">MEAN Stack Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">UI Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Frontend Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">PHP Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Wordpress Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">MEAN Stack Developer<span>(14)</span></a></li>
+        </ul>
+        <ul class="ui list">
+          <li class="item"><a href="#">UI Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Frontend Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">PHP Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Wordpress Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">MEAN Stack Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">UI Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Frontend Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">PHP Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Wordpress Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">MEAN Stack Developer<span>(14)</span></a></li>
+        </ul>
+        <ul class="ui list">
+          <li class="item"><a href="#">UI Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Frontend Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">PHP Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Wordpress Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">MEAN Stack Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">UI Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Frontend Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">PHP Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Wordpress Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">MEAN Stack Developer<span>(14)</span></a></li>
+        </ul>
+        <ul class="ui list">
+          <li class="item"><a href="#">UI Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Frontend Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">PHP Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Wordpress Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">MEAN Stack Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">UI Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Frontend Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">PHP Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">Wordpress Developer<span>(14)</span></a></li>
+          <li class="item"><a href="#">MEAN Stack Developer<span>(14)</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="ui tab segment" data-tab="fifth">
+    <div class="tab_list ui grid">
+      <div class="column">
+        <ul class="ui list">
+          <li class="item"><a href="#">HCL <span>(14)</span></a></li>
+          <li class="item"><a href="#">Accenture <span>(14)</span></a></li>
+          <li class="item"><a href="#">Wipro <span>(14)</span></a></li>
+          <li class="item"><a href="#">Adobe <span>(14)</span></a></li>
+          <li class="item"><a href="#">HCL <span>(14)</span></a></li>
+          <li class="item"><a href="#">Accenture <span>(14)</span></a></li>
+          <li class="item"><a href="#">Wipro <span>(14)</span></a></li>
+          <li class="item"><a href="#">Adobe <span>(14)</span></a></li>
+          <li class="item"><a href="#">HCL <span>(14)</span></a></li>
+          <li class="item"><a href="#">Accenture <span>(14)</span></a></li>
+          
+        </ul>
+        <ul class="ui list">
+          <li class="item"><a href="#">HCL <span>(14)</span></a></li>
+          <li class="item"><a href="#">Accenture <span>(14)</span></a></li>
+          <li class="item"><a href="#">Wipro <span>(14)</span></a></li>
+          <li class="item"><a href="#">Adobe <span>(14)</span></a></li>
+          <li class="item"><a href="#">HCL <span>(14)</span></a></li>
+          <li class="item"><a href="#">Accenture <span>(14)</span></a></li>
+          <li class="item"><a href="#">Wipro <span>(14)</span></a></li>
+          <li class="item"><a href="#">Adobe <span>(14)</span></a></li>
+          <li class="item"><a href="#">HCL <span>(14)</span></a></li>
+          <li class="item"><a href="#">Accenture <span>(14)</span></a></li>
+          
+        </ul>
+        <ul class="ui list">
+          <li class="item"><a href="#">HCL <span>(14)</span></a></li>
+          <li class="item"><a href="#">Accenture <span>(14)</span></a></li>
+          <li class="item"><a href="#">Wipro <span>(14)</span></a></li>
+          <li class="item"><a href="#">Adobe <span>(14)</span></a></li>
+          <li class="item"><a href="#">HCL <span>(14)</span></a></li>
+          <li class="item"><a href="#">Accenture <span>(14)</span></a></li>
+          <li class="item"><a href="#">Wipro <span>(14)</span></a></li>
+          <li class="item"><a href="#">Adobe <span>(14)</span></a></li>
+          <li class="item"><a href="#">HCL <span>(14)</span></a></li>
+          <li class="item"><a href="#">Accenture <span>(14)</span></a></li>
+          
+        </ul>
+        <ul class="ui list">
+          <li class="item"><a href="#">HCL <span>(14)</span></a></li>
+          <li class="item"><a href="#">Accenture <span>(14)</span></a></li>
+          <li class="item"><a href="#">Wipro <span>(14)</span></a></li>
+          <li class="item"><a href="#">Adobe <span>(14)</span></a></li>
+          <li class="item"><a href="#">HCL <span>(14)</span></a></li>
+          <li class="item"><a href="#">Accenture <span>(14)</span></a></li>
+          <li class="item"><a href="#">Wipro <span>(14)</span></a></li>
+          <li class="item"><a href="#">Adobe <span>(14)</span></a></li>
+          <li class="item"><a href="#">HCL <span>(14)</span></a></li>
+          <li class="item"><a href="#">Accenture <span>(14)</span></a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</section>
+<section class="counter_sec">
+  <div class="ui container">
+    <div class="ui centered four column stackable grid statistics">
+      <div class="column text_center">
+        
+        <div class="counters ui small violet  statistic">
+        <div class="value">
+        5,550
+        </div>
+        <div class="label">
+        Jobs
+        </div>
+        </div>
+        
+      </div>
+      <div class="column text_center">
+        <div class="counters ui small violet statistic">
+        <div class="value">
+        5,550
+        </div>
+        <div class="label">
+        Resume
+        </div>
+        </div>
+      </div>
+      <div class="column text_center">
+        <div class="counters ui small violet statistic">
+        <div class="value">
+        5,550
+        </div>
+        <div class="label">
+        Users
+        </div>
+        </div>
+      </div>
+      <div class="column text_center">
+        <div class="counters ui small violet statistic">
+        <div class="value">
+        5,550
+        </div>
+        <div class="label">
+        Company
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="top_companies">
+  <div class="ui container">
+    <h2 class="main_heading text_center">Featured Employers</h2>
+    <div class="ui stackable full-width">
+    <table class="ui  basic table full-width" style="background : #ffffff">
+        <tbody>
+          <tr>
+                <td>
+                  <h4 class="ui image header">
+                    <img src="https://semantic-ui.com/images/avatar2/small/lindsay.png" class="ui mini image" style="font-size: 2.2rem !important">
+                    <div class="content">
+                      Accenture
+                      <div class="sub header">Human Resources, Information Technology, Admin Assistant</div>
+                    </div>
+                  </h4>
+                </td>
+                <td  >
+                    203 Jobs
+                </td> 
+                <td  >
+                    <i class="fa fa-map-marker-alt violet" style="padding-right: 5px;"></i>
+                    <a href="#">Gurgaon,</a> 
+                    <a href="#">Bangalore,</a> 
+                    <a href="#">Hyderabad,</a> 
+                    <a href="#">Chennai,</a> 
+                    <a href="#">Gurgaon,</a> 
+                    
+                </td>
+                <td>
+                    <button class="ui violet basic button">View Jobs</button>
+                </td>
+            </tr>
+         <tr>
+                <td>
+                  <h4 class="ui image header">
+                    <img src="https://semantic-ui.com/images/avatar2/small/lindsay.png" class="ui mini image" style="font-size: 2.2rem !important">
+                    <div class="content">
+                      Accenture
+                      <div class="sub header">Human Resources, Information Technology, Admin Assistant</div>
+                    </div>
+                  </h4>
+                </td>
+                <td  >
+                    203 Jobs
+                </td> 
+                <td  >
+                    <i class="fa fa-map-marker-alt violet" style="padding-right: 5px;"></i>
+                    <a href="#">Gurgaon,</a> 
+                    <a href="#">Bangalore,</a> 
+                    <a href="#">Hyderabad,</a> 
+                    <a href="#">Chennai,</a> 
+                    <a href="#">Gurgaon,</a> 
+                </td>
+                <td>
+                    <button class="ui violet basic button">View Jobs</button>
+                </td>
+            </tr>
+          <tr>
+                <td>
+                  <h4 class="ui image header">
+                    <img src="https://semantic-ui.com/images/avatar2/small/lindsay.png" class="ui mini image" style="font-size: 2.2rem !important">
+                    <div class="content">
+                      Accenture
+                      <div class="sub header">Human Resources, Information Technology, Admin Assistant</div>
+                    </div>
+                  </h4>
+                </td>
+                <td  >
+                    203 Jobs
+                </td> 
+                <td  >
+                    <i class="fa fa-map-marker-alt violet" style="padding-right: 5px;"></i>
+                    <a href="#">Gurgaon,</a> 
+                    <a href="#">Bangalore,</a> 
+                    <a href="#">Hyderabad,</a> 
+                    <a href="#">Chennai,</a> 
+                    <a href="#">Gurgaon,</a> 
+                </td>
+                <td>
+                    <button class="ui violet basic button">View Jobs</button>
+                </td>
+            </tr>
+          <tr>
+              <td>
+                <h4 class="ui image header">
+                  <img src="https://semantic-ui.com/images/avatar2/small/lena.png" class="ui mini image" style="font-size: 2.2rem !important">
+                  <div class="content">
+                    Accenture
+                    <div class="sub header">Human Resources, Information Technology, Admin Assistant</div>
+                  </div>
+                </h4>
+              </td>
+              <td  >
+                  203 Jobs
+              </td> 
+              <td  >
+                  <i class="fa fa-map-marker-alt violet" style="padding-right: 5px;"></i>
+                  <a href="#">Gurgaon,</a> 
+                    <a href="#">Bangalore,</a> 
+                    <a href="#">Hyderabad,</a> 
+                    <a href="#">Chennai,</a> 
+                    <a href="#">Gurgaon,</a> 
+              </td>
+              <td>
+                  <button class="ui violet basic button">View Jobs</button>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                  <h4 class="ui image header">
+                    <img src="https://semantic-ui.com/images/avatar2/small/matthew.png" class="ui mini image" style="font-size: 2.2rem !important">
+                    <div class="content">
+                      Accenture
+                      <div class="sub header">Human Resources, Information Technology, Admin Assistant</div>
+                    </div>
+                  </h4>
+                </td>
+                <td  >
+                    203 Jobs
+                </td> 
+                <td  >
+                    <i class="fa fa-map-marker-alt violet" style="padding-right: 5px;"></i>
+                    <a href="#">Gurgaon,</a> 
+                    <a href="#">Bangalore,</a> 
+                    <a href="#">Hyderabad,</a> 
+                    <a href="#">Chennai,</a> 
+                    <a href="#">Gurgaon,</a> 
+                </td>
+                <td>
+                    <button class="ui violet basic button">View Jobs</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <h4 class="ui image header">
+                    <img src="https://semantic-ui.com/images/avatar2/small/lindsay.png" class="ui mini image" style="font-size: 2.2rem !important">
+                    <div class="content">
+                      Accenture
+                      <div class="sub header">Human Resources, Information Technology, Admin Assistant</div>
+                    </div>
+                  </h4>
+                </td>
+                <td  >
+                    203 Jobs
+                </td> 
+                <td  >
+                    <i class="fa fa-map-marker-alt violet" style="padding-right: 5px;"></i>
+                    <a href="#">Gurgaon,</a> 
+                    <a href="#">Bangalore,</a> 
+                    <a href="#">Hyderabad,</a> 
+                    <a href="#">Chennai,</a> 
+                    <a href="#">Gurgaon,</a> 
+                </td>
+                <td>
+                    <button class="ui violet basic button">View Jobs</button>
+                </td>
+            </tr>
+        </tbody>
+    
+    </table>
+    </div>
+  </div>
+</section>
+
+<section class="signup_sec pd0">
+  <div class="ui two column stackable grid post_section">
+    <div class="column signup_candidate">
+      <div class="ui centered text_center">
+      <p>Looking for job?</p>
+      <h2>Scale your business </h2>
+      <button class="ui large violet button">Post A Resume</button>
+
+      </div>
+  </div>
+ 
+    <div class="column signup_candidate">
+      <div class="ui centered text_center">
+      <p>Looking for Candidate?</p>
+      <h2>Scale your business </h2>
+      <button class="ui large violet button">Post A Job</button>
+      </div>
+  </div>
+    <div class="ui vertical divider">
+    Or
+  </div>
+</div>
+
+</section>
+
+<footer class="footer-area">
+                    <section class="footer-top">
+                        <div class="ui container">
+                            <div class="ui centered one column stackable grid ">
+                              <div class="row">
+                                
+                                <div class="column">
+                                  
+                                    <div class="ui centered grid subscribe-form">
+
+                                       <div class="ui  large action  input">
+                                         <h3 class="ui large header">Get Your Job Alerts</h3>
+                                        <input type="text" placeholder="Email...">
+                                         <button class="ui pink large button">
+                                          Submit
+                                        </button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="footer-widget-area">
+                        <div class="ui container">
+                            <div class="ui stackable four column grid">
+                              <div class="row">
+                                <div class="column">
+                                    <div class="single-footer-widget">
+                                        <h3 class=" text-white mb-26">Get In Touch</h3>
+                                        <ul class="ui list secondary vertical menu">
+                                        <li class="item">
+                                          <span class=" text-white "><i class="fa fa-phone"></i> +012 345 678 102 </span>
+                                        <li class="item">
+                                          <span class=" text-white "><i class="fa fa-envelope"></i> info@example.com</span>
+                                        <li class="item">
+                                          <span class=" text-white "><i class="fa fa-globe"></i> www.example.com</span>
+                                        <li class="item">
+                                          <span class=" text-white "><i class="fa fa-map-marker"></i> ur address goes here,street.</span>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>                                
+                                <div class="column">
+                              <div class="single-footer-widget">
+                                  <h3 class="text-white">By Regions</h3>
+                                  <ul class="ui secondary vertical menu footer-list">
+                                      <li class="item"><a href="#">Sudia Region</a></li>
+                                      <li class="item"><a href="#">North America</a></li>
+                                      <li class="item"><a href="#">Africa</a></li>
+                                      <li class="item"><a href="#">China</a></li>
+                                      <li class="item"><a href="#">Brazil</a></li>
+                                  </ul>
+                              </div>
+                                </div>
+                                <div class="column">
+                                    <div class=" single-footer-widget">
+                                        <h3 class="text-white ">Job Types</h3>
+                                        <ul class="ui secondary vertical menu footer-list">
+                                            <li class="item"><a href="#">Full Time Job</a></li>
+                                            <li class="item"><a href="#">Part Time Job</a></li>
+                                            <li class="item"><a href="#">Temporary Job</a></li>
+                                            <li class="item"><a href="#">Internship Job</a></li>
+                                            <li class="item"><a href="#">Developer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="single-footer-widget">
+                                        <h3 class="text-white ">Keyword By Jobs</h3>
+                                        <ul class="ui secondary vertical menu footer-list">
+                                            <li class="item"><a href="#">Graphic Designer</a></li>
+                                            <li class="item"><a href="#">HTML Designer</a></li>
+                                            <li class="item"><a href="#">WP Developer</a></li>
+                                            <li class="item"><a href="#">Joomla Developer</a></li>
+                                            <li class="item"><a href="#">Content Writer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--End of Footer Widget-area-->
+                    <!-- Start of Footer area -->
+                    <section class="copyright-area text-center ptb-20">
+                        <div class="ui container">
+                            <div class="ui centered stackable grid">
+                              <div class="row">
+                                <div class="column text_center">
+                                  <div class="footer_social">
+                                    
+                                  </div>
+                                    <div class="footer-text">
+                                        <span class="text-white block">
+                                            Copyright© 
+                                            <a href="#">Rozgar</a>
+                                            .All right reserved.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </section>
+  </footer>
+
+
+
+ </div>
+ <script type="text/javascript" src="js/render.js"></script>
+
+
+</body>
+</html>

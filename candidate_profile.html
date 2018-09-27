@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+  <title>Rozgar Home</title>
+  <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+
+<!--=============================== js ==================================== -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/semantic.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+<!-- Sidebar Menu -->
+<div class="ui vertical sidebar menu">
+    <div class="item text_center">
+      <button class="ui pink basic button"> <i class="fa fa-briefcase"></i>
+      <span id="menu_item_mobile_emp_zone"></span>
+      </button>
+    </div>
+    
+    
+  <a class="active item" id="menu_item_mobile_home">
+  </a>
+  <div class="ui accordion item">
+
+
+
+          <div class="title"><span id="menu_item_mobile_search_job"></span> 
+          <i class="dropdown icon pull_right"></i> </div>
+          
+          <div class="content">
+            <div>
+            <ul class="ui sub_menu list">
+
+            <li class="item">
+              
+              <a href="#" id="menu_item_mobile_search_jobs_by_location"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_skill"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_designation"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_company"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_cat"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_all"> </a>
+            </li>
+          </ul>
+            </div>
+          </div>
+  </div>
+ <a class="item" id="menu_item_mobile_international_jobs">
+  </a>
+  <a class="item" id="menu_item_mobile_govt_jobs">
+   
+  </a>
+  <a href="#" class="item" id="menu_item_mobile_skill_assessment"></a>
+  
+   <div class="item">
+    <div class="ui one column grid">
+      <div class="column text_center">
+        <a class="ui violet basic button">
+       <i class="fa fa-sign-in-alt"></i>
+         <span id="menu_item_mobile_login"></span>
+      </a>
+      </div>
+
+      <button class="ui pink button column mg0"><i class="fa fa-plus-circle"></i> 
+        <span id="menu_item_mobile_post_jobs"></span></button>
+      
+      
+       
+      </div>
+  </div>
+
+ </div>
+
+<div class="pusher">
+<!--=============================== header Menu==================================== -->
+<header class="main_header">
+  <div class="ui container top_header">
+    <div class="ui secondary  menu">
+    <a class="menu_icon item">
+          <i class="fas fa-bars"></i>
+        </a>
+    <div class="item">
+       <a class="ui logo image" href="#">
+          <img src="image/logo.png">
+      </a>
+    </div>
+ 
+  <div class="right menu">
+     <div class="item">
+      <button class="ui pink basic button"> <i class="fa fa-briefcase"></i> 
+        <span id="menu_item_desktop_emp_zone"></span></button>
+    </div>
+    
+    <div class="item">
+      <button class="ui pink button"> <i class="fa fa-plus-circle"></i>
+       <span id="menu_item_desktop_post_jobs"></span>
+    </button>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <nav class="main_navigation">
+  <div class="ui stackable pointing menu container">
+  <a class="active item" id="menu_item_desktop_home">
+  </a>
+  <div class="searchjob_drop ui pointing dropdown item">
+          <span class="text" id="menu_item_desktop_search_job"></span>
+          <i class="dropdown icon"></i>
+          <ul class="menu">
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_location"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_skill"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_designation"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_company"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_cat"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_all"> </a>
+            </li>
+          </ul>
+  </div>
+  <a class="item" id="menu_item_desktop_international_jobs">
+  </a>
+  <a class="item" id="menu_item_desktop_govt_jobs">
+  </a>
+  <a href="#" class="item" id="menu_item_desktop_skill_assessment"></a>
+  <div class="right menu">
+   <a class="item">
+   <i class="fa fa-sign-in-alt"></i>
+    <span id="menu_item_desktop_login"></span>
+   </a>
+  </div>
+  </div>
+  </nav>
+</header>
+
+<!-- <section class="comman_header">
+  <div class="ui container banner_text">
+  <h1 class="main_heading whitefont text_center">Login & Registration</h1>
+  </div>
+</section>  -->
+
+
+
+<!--=============================== main section ==================================== -->
+<section class="breadcrum_section">
+  <div class="ui container">
+    <div class="ui breadcrumb">
+    <a class="section">Home</a>
+    <i class="right angle icon divider"></i>
+    <div class="active section">Login</div>
+  </div>
+  </div>
+</section>
+<section class="comman_header">
+  <div class="ui container banner_text">
+  <h1 class="main_heading whitefont text_center">Profile</h1>
+  </div>
+</section> 
+<section class="main_section">
+  <div class="ui container">
+   <div class="ui stackable grid">
+     <div class="row ui segment user_main_detail">
+       <div class="two wide column">
+         <div class="user_detail">
+           <div class="profile_img">
+             <img class="circuler image" src="image/candidate.jpg">
+           </div>
+         </div>
+       </div>
+        <div class="ten wide column">
+         <div class="hints">
+             <div class="detail-desc-caption">
+                <h4>Daniel Dax</h4>
+                <h6 class="designation">Web Developer</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+           
+         </div>
+       </div>
+        <div class="four wide column">
+         <div class="user_conact_info">
+          <div class="get-touch">
+                <h4>Get in Touch</h4>
+                <ul>
+                  <li><i class="fa fa-map-marker"></i><span>Menlo Park, CA</span></li>
+                  <li><i class="fa fa-envelope"></i><span>danieldax704@gmail.com</span></li>
+                  <li><i class="fa fa-phone"></i><span>0 123 456 7859</span></li>
+                  <li><i class="fa fa-money"></i><span>$52/Hour</span></li>
+                </ul>
+              </div>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>  
+
+</section>
+ </div>
+ <script type="text/javascript" src="js/render.js"></script>
+
+
+</body>
+</html>

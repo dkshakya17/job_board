@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+	<title>Rozgar Home</title>
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
+<!--=============================== js ==================================== -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/semantic.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical sidebar menu">
+    <div class="item text_center">
+      <button class="ui pink basic button"> <i class="fa fa-briefcase"></i>
+      <span id="menu_item_mobile_emp_zone"></span>
+      </button>
+    </div>
+    
+    
+  <a class="active item" id="menu_item_mobile_home">
+  </a>
+  <div class="ui accordion item">
+
+
+
+          <div class="title"><span id="menu_item_mobile_search_job"></span> 
+          <i class="dropdown icon pull_right"></i> </div>
+          
+          <div class="content">
+            <div>
+            <ul class="ui sub_menu list">
+
+            <li class="item">
+              
+              <a href="#" id="menu_item_mobile_search_jobs_by_location"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_skill"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_designation"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_company"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_cat"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_mobile_search_jobs_by_all"> </a>
+            </li>
+          </ul>
+            </div>
+          </div>
+  </div>
+ <a class="item" id="menu_item_mobile_international_jobs">
+  </a>
+  <a class="item" id="menu_item_mobile_govt_jobs">
+   
+  </a>
+  <a href="#" class="item" id="menu_item_mobile_skill_assessment"></a>
+  
+   <div class="item">
+    <div class="ui one column grid">
+      <div class="column text_center">
+        <a class="ui violet basic button">
+       <i class="fa fa-sign-in-alt"></i>
+         <span id="menu_item_mobile_login"></span>
+      </a>
+      </div>
+
+      <button class="ui pink button column mg0"><i class="fa fa-plus-circle"></i> 
+        <span id="menu_item_mobile_post_jobs"></span></button>
+      
+      
+       
+      </div>
+  </div>
+
+ </div>
+
+<div class="pusher">
+<!--=============================== header Menu==================================== -->
+<header class="main_header">
+  <div class="ui container top_header">
+    <div class="ui secondary  menu">
+    <a class="menu_icon item">
+          <i class="fas fa-bars"></i>
+        </a>
+    <div class="item">
+       <a class="ui logo image" href="#">
+          <img src="image/logo.png">
+      </a>
+    </div>
+ 
+  <div class="right menu">
+     <div class="item">
+      <button class="ui pink basic button"> <i class="fa fa-briefcase"></i> 
+        <span id="menu_item_desktop_emp_zone"></span></button>
+    </div>
+    
+    <div class="item">
+      <button class="ui pink button"> <i class="fa fa-plus-circle"></i>
+       <span id="menu_item_desktop_post_jobs"></span>
+    </button>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <nav class="main_navigation">
+  <div class="ui stackable pointing menu container">
+  <a class="active item" id="menu_item_desktop_home">
+  </a>
+  <div class="searchjob_drop ui pointing dropdown item">
+          <span class="text" id="menu_item_desktop_search_job"></span>
+          <i class="dropdown icon"></i>
+          <ul class="menu">
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_location"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_skill"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_designation"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_company"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_cat"> </a>
+            </li>
+            <li class="item">
+              <a href="#" id="menu_item_desktop_search_jobs_by_all"> </a>
+            </li>
+          </ul>
+  </div>
+  <a class="item" id="menu_item_desktop_international_jobs">
+  </a>
+  <a class="item" id="menu_item_desktop_govt_jobs">
+  </a>
+  <a href="#" class="item" id="menu_item_desktop_skill_assessment"></a>
+  <div class="right menu">
+   <a class="item">
+   <i class="fa fa-sign-in-alt"></i>
+    <span id="menu_item_desktop_login"></span>
+   </a>
+  </div>
+  </div>
+  </nav>
+</header>
+
+<section class="comman_header">
+ <div class="ui container">
+        <div class = "ui centered stackable grid">
+            <div class="ten wide column">
+              <div class="ui action left icon input">
+              <i class="search icon"></i>
+              <input type="text" placeholder="Company, Skill, Job Title or Keyword...">
+              <div class="ui search selection dropdown">
+                <i class="dropdown icon"></i>
+                <div class="default text">Select Location</div>
+                <div class="menu">
+                  <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
+                  <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
+                </div>
+              </div>
+              <div class="ui search selection dropdown">
+                <i class="dropdown icon"></i>
+                <div class="default text">Experience</div>
+                <div class="menu">
+                  <div class="item" data-value="af"><i class="af flag"></i>0-2 Years</div>
+                  <div class="item" data-value="ax"><i class="ax flag"></i>2-5 Years</div>
+                  <div class="item" data-value="ax"><i class="ax flag"></i>5-8 Years</div>
+                </div>
+              </div>
+              <button class="ui pink button"> <i class="fa fa-search"></i>Search</button>
+            </div>
+            </div>
+        </div>
+      </div>
+</section> 
+
+
+<!--=============================== main section ==================================== -->
+<section class="breadcrum_section">
+  <div class="ui container">
+    <div class="ui segment">
+      <div class="ui violet breadcrumb">
+              <a class="section">Home</a>
+              <i class="right angle icon divider"></i>
+              <a class="section">Noida Jobs</a>
+              <i class="right angle icon divider"></i>
+              <div class="section">Full stack developer required</div>
+          </div>
+    </div>        
+  </div>
+      
+</section>
+
+
+<section class="main_section">
+  <div class="ui container">
+   
+    <article class="ui stackable two column grid">
+     <div class="row">
+        <div class="ui eleven wide column job_detail_head">
+
+         <div class="job_details">
+                      <h1 class="header">Looking for Bootstrap designer</h1>
+                      <div class="job-detail-meta">
+                        <ul class="ui labels details_lable">
+                            <li class="ui basic label">
+                              <i class="fa fa-location-arrow"></i> Model Town USA</li>
+                            <li class="ui basic label">
+                              <i class="fas fa-dollar-sign"></i> 600/Month</li>
+                            <li class="ui basic label">
+                              <i class="far fa-clock"></i> Full Time</li>
+                            <li class="ui basic label">
+                              <i class="far fa-calendar-alt"></i> Posted On: 20 January 2017</li>
+                        </ul>
+                    </div>
+                      
+                     
+            </div>
+      </div>
+      <div class="ui five wide text_center column apply_btn_group">
+
+        
+       
+        <div class="ui secondary menu">
+          <div class="item pd0">
+            <button class="ui large violet button apply_btn ">Apply Now</button>
+          </div>
+           <div class="item pd0">
+            <button class="ui linkedin button ">
+             <i class="fab fa-linkedin-in"></i>
+              Apply With linkedin</button>
+          </div>
+        </div>
+      </div>
+     </div>
+      <div class="row">
+        <main class="ui eleven wide column">
+        <div class="column">
+        <div class="ui stackable one column grid">
+       
+        <div class="row">
+          <div class="column">
+           <div class="ui relaxed divided items">
+             
+             <div class="item">
+               <div class="content">
+                  <div class="ui segment">
+              <div class="ui items">
+                <div class="item">
+                  <div class="detail_tile content">
+                    <h3 class="ui header">Job Description</h3> 
+                    <div class="job_description">
+                      <p>Company is a 2016 Iowa City-born start-up that develops consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+               </div>
+             </div>
+
+             <div class="item">
+               <div class="content">
+                  <div class="ui segment">
+              <div class="ui items">
+                   <div class="item">
+                  <div class="detail_tile content">
+                    <h3 class="ui header">Desired Candidate Profile</h3> 
+                    <div class="job_description">
+                       <div class="company_det">
+                                        <h4>Desired Skills</h4>
+                                      <p>Technical/Functional Knowledge and Skills required:</p>
+                                      <ul class="ui list">
+                                         <li class="item">  Solidwork Software</li>
+                                         <li class="item">  AutoCAD</li>
+                                         <li class="item"> Machine Design Knowledge</li>
+                                         <li class="item"> Hands on experience in components, machining of tool room.</li>
+                                         <li class="item">  Excellent managerial skills, abilities to handle the team and bring the best output.</li>  
+                                      </ul>
+                                      <p></p>
+                                    </div>
+                                    <div class="education_det">
+                                      <h4>Education:</h4>
+                                       <p><strong>UG:</strong> B.Tech/B.E. - Any Specialization, Mechanical, Diploma - Any Specialization</p>
+                                      <p><strong>PG:</strong> MCA/M.Tech</p>
+                         </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+               </div>
+             </div>
+
+
+
+             <div class="item">
+               <div class="content">
+                  <div class="ui segment">
+              <div class="ui items">
+                <div class="item">
+                  <div class="detail_tile content">
+                    <h3 class="ui header">Key Skills</h3> 
+                     <div class="label grup profile_skills">
+                                  <a href="#" class="ui basic large label"> wordpress </a>
+                                  <a href="#" class="ui basic large label"> css3 </a>
+                                  <a href="#" class="ui basic large label"> javascript </a>
+                                  <a href="#" class="ui basic large label"> php </a>
+                                  <a href="#" class="ui basic large label"> laravel </a>
+                                  <a href="#" class="ui basic large label"> woocommerce </a>
+                                  <a href="#" class="ui basic large label"> wordpress </a>
+                                  <a href="#" class="ui basic large label"> css3 </a>
+                                  <a href="#" class="ui basic large label"> javascript </a>
+                                  <a href="#" class="ui basic large label"> php </a>
+                                  <a href="#" class="ui basic large label"> laravel </a>
+                                  <a href="#" class="ui basic large label"> woocommerce </a>
+                      </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+               </div>
+             </div>
+
+              <div class="item">
+               <div class="content">
+              <div class="ui segment">
+              <div class="ui items">
+                <div class="item">
+                  <div class="detail_tile content">
+                    <h3 class="ui header">Company Detail</h3> 
+                    <div class="job_description">
+                      <p>Company is a 2016 Iowa City-born start-up that develops consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+               </div>
+             </div>
+           </div>
+          </div>
+          </div>
+         
+        </div>
+        </div>
+        
+      </main>
+      <aside class="ui five wide column">
+        <div class="ui segment">
+           <div class="detail_tile content">
+                    <h3 class="ui header">Short Discription</h3> 
+         <ul class="short-decs-sidebar">
+                                    
+                                    <li>
+                                        <div>
+                                            <h4>Job Experience:</h4></div>
+                                        <div><i class="far fa-clock"></i> 5 years</div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Job Shift:</h4></div>
+                                        <div><i class="fa fa-calendar"></i>Morning </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Posted On:</h4></div>
+                                        <div><i class="fa fa-calendar"></i>10 May, 2016 </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Salary:</h4></div>
+                                        <div><i class="fa fa-rupee"></i>INR 12,00,000 - 14,00,000 P.A.</div>
+                                    </li>
+                                     <li>
+                                        <div>
+                                            <h4>Industry:</h4></div>
+                                        <div><i class="fa fa-industry"></i>KPO / Research / Analytics</div>
+                                    </li>
+                                     <li>
+                                        <div>
+                                            <h4>Functional Area:</h4></div>
+                                        <div>ITES , BPO , KPO , LPO , Customer Service , Operations</div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Role Category:</h4></div>
+                                        <div>Operations</div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Role:</h4></div>
+                                        <div>Operations Manager</div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Employment Type:</h4></div>
+                                        <div>Permanent Job, Full Time</div>
+                                    </li>
+                                </ul>
+                              </div>
+        </div>
+
+        <div class="ui segment">
+        <div class="detail_tile content">
+        <h3 class="ui header">Company Detail</h3> 
+                           <table>
+                                <tbody><tr>
+                                    <th>Name:</th>
+                                    <td> Fakry Agency Pvt. Ltd., Vatnaam</td>
+                                </tr>
+                                <tr>
+                                    <th>Email:</th>
+                                    <td> admin@confidential.com</td>
+                                </tr>
+                                <tr>
+                                    <th>Phone:</th>
+                                    <td> +99 333 1234567</td>
+                                </tr>
+                                <tr>
+                                    <th>Website:</th>
+                                    <td> www.caplvwebsite.com</td>
+                                </tr>
+                                <tr>
+                                    <th>Address:</th>
+                                    <td> 2nd Downtown street, hellon city, vatnaam</td>
+                                </tr>
+                            </tbody></table>
+                              </div>
+        </div>
+      </aside>
+      </div>
+      
+    </article>
+   
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+ </div>
+ <script type="text/javascript" src="js/render.js"></script>
+
+
+</body>
+</html>
